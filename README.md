@@ -7,7 +7,6 @@ Aim:
 
     Verify the Functionality using Test-bench.
 
-
 Tool Required:
 
   Functional Simulation: nclaunch Simulator (nclaunch)
