@@ -1,4 +1,5 @@
 Exp-No:1 - 4 Bit Adder - Write Verilog Code and Verify the Functionality using Test-bench ( Using Frontend tool - nclaunch in cadence).
+
 Aim:
 
   To write a verilog code for 4bit adder and verify the functionality using Test bench.
@@ -17,12 +18,14 @@ Tool Required:
   To construct a 4-bit adder, need to chain together four 1-bit full adders. Each full adder computes the sum and carry for one bit of the two numbers. The carry-out from one adder feeds into the carry-in of the next adder in the sequence. This process adds the two 4-bit numbers bit by bit, with the carry propagating through each stage, resulting in a final sum and carry-out at the end.   To design a 1-bit full adder, the first step is to create a truth table that represents all possible combinations of the inputs (A, B, and CIN) and the corresponding outputs (Sum(S) and COUT).
 
 
-image
+![image](https://github.com/user-attachments/assets/407aae7f-22df-4e3c-8f03-f3385560ef26)
+
 
 Here’s the truth table for a 1-bit full adder:
 
 
-tt
+
+![image](https://github.com/user-attachments/assets/d707bc88-d2fd-4e41-ba91-28be4b532baf)
 
 
 
@@ -40,7 +43,8 @@ Sum (S):
 Carry out (COUT):
   COUT=(A&B) | (CIN&(A^B))
 
-image
+![image](https://github.com/user-attachments/assets/8b2abb69-1838-4609-952e-ead3e13611c8)
+
 
 
 
@@ -119,7 +123,8 @@ Functional Simulation:
   After this you can see the window like below
 
 
-20241006_041054
+![image](https://github.com/user-attachments/assets/ec04688a-fe0d-43b3-bc90-e5857aa9f808)
+
 
 
 
@@ -136,7 +141,8 @@ Fig 3:Invoke the Cadence Environment
   It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
 
 
-Picture4
+![image](https://github.com/user-attachments/assets/1bbf2543-e802-4b35-867b-35eb8227e262)
+
 
 
 
@@ -147,7 +153,8 @@ Fig 4:Setting Multi-step simulation
   Click the cds.lib file and save the file by clicking on Save option
 
 
-Picture5
+![image](https://github.com/user-attachments/assets/e3c44dae-5c1e-4d14-b564-970a3abc7366)
+
 
 
 
@@ -162,7 +169,8 @@ Fig 5:cds.lib file Creation
     A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure
 
 
-Screenshot 2024-10-05 093336
+![image](https://github.com/user-attachments/assets/e8e9ca08-2d03-4d37-a6d5-66531db131da)
+
 
 
 
@@ -177,7 +185,8 @@ Fig 6: Selection of Don’t include any libraries
   To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation.
 
 
-Screenshot 2024-10-05 093427
+![image](https://github.com/user-attachments/assets/f0d10e9c-1821-4a4d-8e42-df31be891753)
+
 
 
 
@@ -206,7 +215,8 @@ Steps for compilation:
   Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
 
 
-Screenshot 2024-10-05 093508
+![image](https://github.com/user-attachments/assets/4b2b54c4-691f-4ecc-b040-d44ac801f5fa)
+
 
 
 
@@ -235,7 +245,8 @@ Step 2: Elaboration:– To check the port connections in hierarchical design
   After elaboration the file will come under snapshot. Select the test bench and elaborate it.
 
 
-Screenshot 2024-10-05 093552
+![image](https://github.com/user-attachments/assets/390d97e8-b9ef-406e-ba4e-7e8e71d2f365)
+
 
 
 
@@ -253,25 +264,30 @@ Step 3: Simulation: – Simulate with the given test vectors over a period of ti
   Steps for simulation – Run the simulation command with simulator options
 
 
-Picture3
+![image](https://github.com/user-attachments/assets/8411ba40-895d-46ab-a87f-9a9843ea1b15)
+
 
 
 
 Fig 10: Design Browser window for simulation
 
 
-Picture2
+![image](https://github.com/user-attachments/assets/475c1fd7-d20e-4ccc-82f5-c584c7712c9c)
+
 
 
 
 Fig 11: Launching Simulation Waveform WindowSimulation Waveform Window
 
 
-Picture1
+
+
+![image](https://github.com/user-attachments/assets/0755f08f-8016-4a74-a562-9e5718ef4e57)
 
 
 
 Fig 12: Simulation Waveform Window
+
 
 
 Result:
